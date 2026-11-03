@@ -1,0 +1,90 @@
+
+### 
+GET http://127.0.0.1:8000/api/turf/
+Accept: application/json
+
+###
+
+### 
+POST http://127.0.0.1:8000/api/turf/
+Content-Type: application/json
+
+{
+    "turf_name": "ELCLASSICO",
+    "location": "kannur",
+    "turf_type": "natural grass turf",
+    "price_per_hour": 1500,
+    "description": "demo",
+    "is_available": true
+}
+
+###
+
+### 
+GET http://127.0.0.1:8000/api/turf/1/
+Accept: application/json
+
+###
+
+### 
+PUT http://127.0.0.1:8000/api/turf/1/
+Content-Type: application/json
+
+{
+    "turf_name": "ELCLASSICO",
+    "location": "Payyannur",
+    "turf_type": "natural grass turf",
+    "price_per_hour": 1800,
+    "description": "Updated turf details",
+    "is_available": true
+}
+
+###
+
+### 
+DELETE http://127.0.0.1:8000/api/turf/1/
+
+###
+
+### 
+GET http://127.0.0.1:8000/api/booking/
+Accept: application/json
+
+###
+
+### 
+POST http://127.0.0.1:8000/api/booking/
+Content-Type: application/json
+
+{
+    "turf": 1,
+    "user_name": "Aswin",
+    "booking_date": "2026-11-10",
+    "start_time": "10:00:00",
+    "end_time": "12:00:00"
+}
+
+###
+
+### 
+GET http://127.0.0.1:8000/api/booking/1/
+Accept: application/json
+
+###
+
+###
+PUT http://127.0.0.1:8000/api/booking/1/
+Content-Type: application/json
+
+{
+    "turf": 1,
+    "user_name": "Aswin",
+    "booking_date": "2026-11-10",
+    "start_time": "14:00:00",
+    "end_time": "16:00:00"
+}
+
+###
+
+### 
+DELETE http://127.0.0.1:8000/api/booking/1/
